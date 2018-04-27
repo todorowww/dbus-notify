@@ -1,0 +1,28 @@
+{
+    "name": "todorowww/dbus-notify",
+    "type": "library",
+    "version": "0.1",
+    "description": "D-Bus Notification Library for Derick Rethans D-Bus PHP extension",
+    "keywords": ["dbus","notify","d-bus","php-dbus"],
+    "homepage": "https://github.com/todorowww/dbus-notify",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Slobodan Todorov",
+            "email": "slobodan@todorowww.net",
+            "homepage": "https://todorowww.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "lib-libxml": "*",
+        "ext-xml": "*",
+        "ext-dbus": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "todorowww\\": "src/"
+        }
+    }
+}
