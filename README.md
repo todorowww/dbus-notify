@@ -1,4 +1,5 @@
 ![License](https://img.shields.io/github/license/todorowww/dbus-notify.svg)
+![Packagist Version](https://img.shields.io/packagist/v/todorowww/dbus-notify.svg)
 ![GitHub Release](https://img.shields.io/github/release/todorowww/dbus-notify.svg)
 
 D-Bus Notify
