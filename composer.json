@@ -1,7 +1,6 @@
 {
     "name": "todorowww/dbus-notify",
     "type": "library",
-    "version": "0.1",
     "description": "D-Bus Notification Library for Derick Rethans D-Bus PHP extension",
     "keywords": ["dbus","notify","d-bus","php-dbus"],
     "homepage": "https://github.com/todorowww/dbus-notify",
