@@ -1,3 +1,6 @@
+![License](https://img.shields.io/github/license/todorowww/dbus-notify.svg)
+![GitHub Release](https://img.shields.io/github/release/todorowww/dbus-notify.svg)
+
 D-Bus Notify
 =================================
 
@@ -21,4 +24,23 @@ Install the latest version of this library by issuing this command
 	$icon = "path/to/your/desired/icon.png";
 	$summary = "Notification message summary (title)";
 	$body = "Notification message body";
-	$Notify->$Notify->notify($appName, $icon, $summary, $body);
+	$Notify->notify($appName, $icon, $summary, $body);
+	
+## Responding to actions ##
+
+	use todorowww\DBusNotify;
+	
+	// Instantiate DBusNotify class
+	$Notify = new DBusNotify();
+	
+	$icon = "path/to/your/desired/icon.png";
+	$summary = "Notification message summary (title)";
+	$body = "Notification message body";
+	$actions = [
+	    "ok" => "OK",
+	    "cancel" => "Cancel"
+	];
+	$Notify->notify($appName, $icon, $summary, $body, $actions);
+	$Notify->waitForAction(myCallback, 30); // Wait for 30 seconds before timing out
+
+When user clicks on a button, or closes the notification, myCallback will be triggered. Action info will be passed as a parameter of the function.
